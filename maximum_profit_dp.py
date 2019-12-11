@@ -65,3 +65,7 @@ def maximum_profit_limited_spaceoptimized2_dp(prices, k):
             s[i] = max(-prices[i] + t[0][i-1], s[i-1])
         t[0] = [e for e in t[1]]
     return t[1][n-1]
+
+
+def max_profit_dp(prices, k):
+    return maximum_profit_limited_spaceoptimized2_dp(prices, k)
