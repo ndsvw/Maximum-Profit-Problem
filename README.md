@@ -4,5 +4,10 @@ Input: Given an array of n integers representing a price of something over a tim
 
 Output: What is the maximum profit you can make by buying and selling at most k times?
 
-## dynamic programming approach
+## Dynamic programming approach
 ![alt text](formula.png "Logo Title Text 1")
+
+Running time: O(k*n)
+
+Space usage: O(n)
+
