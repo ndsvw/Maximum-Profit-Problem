@@ -56,7 +56,10 @@ def maximum_profit_limited_spaceoptimized2_dp(prices, k):
     if n == 0:
         return 0
     s = [0 for _ in range(n)]
-    t = [[0 for _ in range(n)] for _ in range(2)]
+    t = [
+        [0 for _ in range(n)],
+        [0 for _ in range(n)]
+    ]
     s[0] = -prices[0]
     t[0][0] = 0
     for _ in range(1, k+1):
