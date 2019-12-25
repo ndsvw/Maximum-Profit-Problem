@@ -11,3 +11,19 @@ Running time: O(k*n)
 
 Space usage: O(n)
 
+## Examples
+
+```python
+a = [20, 580, 420, 900]
+max_profit_dp(a, 0) // 0
+max_profit_dp(a, 1) // 880
+max_profit_dp(a, 2) // 1440
+```
+
+```python
+a = [10, 22, 5, 75, 65, 80]
+max_profit_dp(a, 0) // 0
+max_profit_dp(a, 1) // 75
+max_profit_dp(a, 2) // 87
+max_profit_dp(a, 3) // 97
+```
