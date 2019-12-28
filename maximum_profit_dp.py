@@ -1,7 +1,21 @@
 def maximum_profit_unlimited_dp(prices):
-    # given an array of prices:
-    # what is the max. profit you can make by buying and selling
-    # as often as you want?
+    """
+    A method that calculates the maximum profit that can be made by buying and selling unlimited often
+    Problem description: https://practice.geeksforgeeks.org/problems/maximum-profit/0
+        time complexity: O(n)
+        space complexity: O(n)
+
+    Parameters
+    ----------
+    prices : int[]
+        a list of int values representing the price of something over a time span
+
+    Returns
+    -------
+    x  : int
+        the maximum profit that can be made by buying and selling unlimited often
+    """
+
     n = len(prices)
     if n == 0:
         return 0
@@ -14,9 +28,25 @@ def maximum_profit_unlimited_dp(prices):
 
 
 def maximum_profit_limited_dp(prices, k):
-    # given an array of prices:
-    # what is the max. profit you can make by buying and selling
-    # at most k times (buying k times and selling k times)
+    """
+    A method that calculates the maximum profit that can be made by buying and selling at most k times
+    Problem description: https://practice.geeksforgeeks.org/problems/maximum-profit/0
+        time complexity: O(n*k)
+        space complexity: O(n*k)
+
+    Parameters
+    ----------
+    prices : int[]
+        a list of int values representing the price of something over a time span
+    k  : int
+        integer that restricts how often you can buy and sell
+
+    Returns
+    -------
+    x  : int
+        the maximum profit that can be made by buying and selling unlimited often
+    """
+
     n = len(prices)
     if n == 0:
         return 0
@@ -32,8 +62,25 @@ def maximum_profit_limited_dp(prices, k):
 
 
 def maximum_profit_limited_spaceoptimized1_dp(prices, k):
-    # the same as maximum_profit_limited_dp(prices, k),
-    # but space-optimized (step 1/2)
+    """
+    A method that calculates the maximum profit that can be made by buying and selling at most k times (space-optimized 1/2)
+    Problem description: https://practice.geeksforgeeks.org/problems/maximum-profit/0
+        time complexity: O(n*k)
+        space complexity: O(n*k)
+
+    Parameters
+    ----------
+    prices : int[]
+        a list of int values representing the price of something over a time span
+    k  : int
+        integer that restricts how often you can buy and sell
+
+    Returns
+    -------
+    x  : int
+        the maximum profit that can be made by buying and selling unlimited often
+    """
+
     n = len(prices)
     if n == 0:
         return 0
@@ -50,8 +97,25 @@ def maximum_profit_limited_spaceoptimized1_dp(prices, k):
 
 
 def maximum_profit_limited_spaceoptimized2_dp(prices, k):
-    # the same as maximum_profit_limited_dp(prices, k),
-    # but space-optimized (step 2/2)
+    """
+    A method that calculates the maximum profit that can be made by buying and selling at most k times (space-optimized 2/2)
+    Problem description: https://practice.geeksforgeeks.org/problems/maximum-profit/0
+        time complexity: O(n*k)
+        space complexity: O(n)
+
+    Parameters
+    ----------
+    prices : int[]
+        a list of int values representing the price of something over a time span
+    k  : int
+        integer that restricts how often you can buy and sell
+
+    Returns
+    -------
+    x  : int
+        the maximum profit that can be made by buying and selling unlimited often
+    """
+
     n = len(prices)
     if n == 0:
         return 0
@@ -71,4 +135,23 @@ def maximum_profit_limited_spaceoptimized2_dp(prices, k):
 
 
 def max_profit_dp(prices, k):
+    """
+    A method that calculates the maximum profit that can be made by buying and selling at most k times (space-optimized)
+    Problem description: https://practice.geeksforgeeks.org/problems/maximum-profit/0
+        time complexity: O(n*k)
+        space complexity: O(n)
+
+    Parameters
+    ----------
+    prices : int[]
+        a list of int values representing the price of something over a time span
+    k  : int
+        integer that restricts how often you can buy and sell
+
+    Returns
+    -------
+    x  : int
+        the maximum profit that can be made by buying and selling unlimited often
+    """
+
     return maximum_profit_limited_spaceoptimized2_dp(prices, k)
